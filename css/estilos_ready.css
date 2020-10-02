@@ -1,6 +1,6 @@
-body{
+body {
     margin: 0;
-    font-family: 'Sansita Swashed';
+    font-family: "Lato";
 }
 
 .navbar {
@@ -13,8 +13,8 @@ body{
     z-index: 3;
 }
 
-.navbar .navbar-item{
-    color: black;
+.navbar .navbar-item {
+    color: #000000;
     font-size: 1em;
     margin: 0 auto;
     padding: 20px;
@@ -27,7 +27,7 @@ body{
     background-color: #cccccc;
 }
 
-#inicio{
+#inicio {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -40,14 +40,14 @@ body{
     background-size: cover;
 }
 
-#inicio .avatar{
+#inicio .avatar {
     border-radius: 100%;
 }
 
-#inicio .inicio-nombre, #inicio .inicio-cargo{
+#inicio .inicio-nombre, #inicio .inicio-cargo {
     text-align: center;
     margin: 10px;
-    color: white;
+    color: #ffffff;
 }
 
 #acerca, #experiencia {
@@ -58,30 +58,31 @@ body{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-#acerca .contenido .acerca-contenido{
+#acerca .contenido .acerca-contenido {
     text-align: justify;
     column-count: 2;
-    column-gap: 5%;
+    column-gap: 10%;
     margin: 20px auto;
-    line-height: 1.5em;
+    line-height: 1.7em;
     width: 75%;
 }
 
-#experiencia .contenido{
+#experiencia .contenido {
     text-align: justify;
+    column-gap: 10%;
     margin: 20px auto;
-    line-height: 1.5em;
-    width: 100%;
+    line-height: 1.7em;
+    width: 75%;
 }
 
 .seccion-titulo {
-    font-size: 40px;
-    text-align: center;
+    font-size: 50px;
     color: #000000;
+    text-align: center;
 }
 
 #tecnologias {
@@ -97,11 +98,11 @@ body{
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-#tecnologias .contenido .card{
+#tecnologias .contenido .card {
     background-color: #66666688;
     box-shadow: 0 4px 8px 0 #00000011;
     display: inline-block;
@@ -109,11 +110,6 @@ body{
     padding: 20px 10px;
     text-align: center;
     width: 350px;
-}
-
-#tecnologias .contenido .card .container {
-    padding: 2px;
-    text-align: center;
 }
 
 #tecnologias .contenido .card .container {
@@ -129,15 +125,15 @@ body{
 }
 
 #tecnologias .contenido .card .icon-html5 {
-    color:  rgb(241, 162, 13)
+    color: rgb(241, 162, 13)
 }
 
 #tecnologias .contenido .card .icon-android {
-    color:  rgb(9, 255, 0)
+    color: rgb(0, 255, 0)
 }
 
 #tecnologias .contenido .card .icon-apple {
-    color:  rgb(255, 255, 255)
+    color: rgb(255, 255, 255)
 }
 
 @media only screen and (min-width: 375px) and (max-width: 410px) {
@@ -148,22 +144,45 @@ body{
     #acerca .contenido .acerca-contenido {
         text-align: justify;
         column-count: 1;
-        margin: 10px auto;
+        margin: 20px auto;
         line-height: 1.7em;
-        width: 85%;
+        width: 75%;
     }
 
     #experiencia .contenido  {
         text-align: justify;
         column-count: 1;
-        margin: 10px auto;
+        margin: 20px auto;
         line-height: 1.7em;
-        width: 85%;
+        width: 75%;
     }
-
 }
 
 @media only screen and (min-width: 411px) and (max-width: 767px) {
+    .navbar {
+        background-color: #3e34cc;
+        height: 100%;
+        padding-top: 40px;
+        position: fixed;
+        overflow-x: hidden;
+        text-align: center;
+        top: 0;
+        transition: .5s;
+        width: 0;
+        z-index: 3;
+    }
+
+    .navbar .navbar-item {
+        padding: 10px 0;
+        margin: 0 auto;
+        text-decoration: none;
+        color: #fff;
+        font-size: .8em;
+        text-transform: uppercase;
+        display: block;
+        transition: .5s;
+    }
+
     #inicio .avatar {
         width: 75%;
     }
@@ -171,32 +190,48 @@ body{
     #acerca .contenido .acerca-contenido {
         text-align: justify;
         column-count: 1;
-        margin: 10px auto;
+        margin: 20px auto;
         line-height: 1.7em;
-        width: 85%;
+        width: 75%;
     }
 
     #experiencia .contenido  {
         text-align: justify;
         column-count: 1;
-        margin: 10px auto;
+        margin: 20px auto;
         line-height: 1.7em;
-        width: 85%;
+        width: 75%;
     }
 
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        
-    #inicio .avatar {
-        width: 300px;
+    
+    .navbar {
+        background-color: #3e34cc;
+        height: 100%;
+        padding-top: 40px;
+        position: fixed;
+        overflow-x: hidden;
+        text-align: center;
+        top: 0;
+        transition: .5s;
+        width: 0;
+        z-index: 3;
     }
 
-    #experiencia .contenido  {
-        text-align: justify;
-        column-count: 1;
-        margin: 10px auto;
-        line-height: 1.7em;
-        width: 85%;
+    .navbar .navbar-item {
+        padding: 10px 0;
+        margin: 0 auto;
+        text-decoration: none;
+        color: #fff;
+        font-size: .8em;
+        text-transform: uppercase;
+        display: block;
+        transition: .5s;
+    }
+    
+    #inicio .avatar {
+        width: 300px;
     }
 }
